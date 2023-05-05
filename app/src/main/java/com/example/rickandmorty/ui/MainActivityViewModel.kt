@@ -21,10 +21,6 @@ data class MainState(
 class MainActivityViewModel @Inject constructor(
     private val characterRepository: CharacterRepository
 ) : ViewModel() {
-    init {
-        // suscribo mi stateflow al getCharacters
-        //llamo a fetchCharacters
-    }
 
     private val mutableStateFlow = MutableStateFlow(MainState())
     val state: StateFlow<MainState> = mutableStateFlow

@@ -34,6 +34,5 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.adapter = adapter
 
         viewModel.loadCharacters()
-
     }
 }
